@@ -1,6 +1,5 @@
 "use strict";
 
-const isChecked = true,
-      isClose = true;
-
-console.log(isChecked && isClose);
+if (5 == 5) {
+    console.log('Ok!');
+}
