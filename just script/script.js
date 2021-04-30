@@ -220,15 +220,47 @@
 
 // log(...num);
 
-const array = ["a", "b"];
+// const array = ["a", "b"];
 
-const newAarray = [...array];
+// const newAarray = [...array];
 
-const q = {
-    one: 1,
-    two: 2
-};
+// const q = {
+//     one: 1,
+//     two: 2
+// };
 
-const newObj = {...q};
+// const newObj = {...q};
 
-console.log(q);
+// console.log(q);
+
+
+// ООП и ПРОТОТИПНО-ОРИЕНТИРОВАННОЕ НАСЛЕДОВАНИЯ
+
+// let str = "some";
+// let strObj = new String(str);
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+
+// console.dir([1,2,3]);
+
+// const soldier = {
+//     health: 400,
+//     armor: 100,
+//     sayhello: function() {
+//         console.log("Hello");
+//     }
+// };
+
+// const john =  Object.create(soldier);
+
+// const john = {
+//     health: 100
+// };
+
+// john.__proto__ = soldier; // НЕ ИСПОЛЬЗУЕТСЯ
+
+// Object.setPrototypeOf(john, soldier);
+
+// console.log(john.armor);
+// john.sayhello();
