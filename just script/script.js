@@ -1,6 +1,8 @@
 "use strict";
 // CYCLES
 
+
+
 // let num = 50;
 
 // while (num <= 55) {
@@ -25,6 +27,8 @@
 
 
 // FUNCTIONS
+
+
 
 // let num = 30;
 
@@ -60,15 +64,16 @@
 
 // logger();
 
-
-
 // const calc = (a, b) => { 
 //     console.log('1');
 //     return a + b; 
 // };
 
 
+
 // METHODS AND CONFIGURATIONS
+
+
 
 // const str = "teSt";
 // const arr = [1, 2, 4];
@@ -98,7 +103,10 @@
 // console.log(parseFloat(test));
 
 
+
 // ARRAYS AND PSEUDOARRAYS
+
+
 
 // const arr = [2, 3, 6, 8, 10];
 // arr[99] = 0;
@@ -133,7 +141,10 @@
 // console.log(products.join('; '));
 
 
+
 // Передача данных по ссылке и по значению
+
+
 
 // let a = 5;
 //     b = a;
@@ -234,7 +245,10 @@
 // console.log(q);
 
 
+
 // ООП и ПРОТОТИПНО-ОРИЕНТИРОВАННОЕ НАСЛЕДОВАНИЯ
+
+
 
 // let str = "some";
 // let strObj = new String(str);
@@ -264,3 +278,92 @@
 
 // console.log(john.armor);
 // john.sayhello();
+
+
+
+//Отлов ошибок в коде при помощи консоли
+
+
+
+// function hello() {
+//     console.log("Hello World");
+// }
+
+// hello();
+
+// function hi() {
+//     console.log('Say hi!');
+// }
+
+// hi();
+
+// const arr = [1, 14, 4, 30, 54],
+//       sorted = arr.sort(compareNum);
+
+// function compareNum(a, b) {
+//     return a - b;
+// }
+// console.log(sorted);
+
+
+
+//Динамическая типизация
+
+
+
+// To String
+
+
+// 1
+// console.log(typeof(String(null)));
+
+// 2 Конкатенация - сложение строки с чем-либо превращает это в строку
+// console.log(typeof(5 + ''));
+
+// const num = 5;
+
+// console.log("https://vk.com/catalog/" + num);
+
+// const fontSize = 26 + 'px';
+
+
+// To Number
+
+
+// 1 
+// console.log(typeof(Number('4')));
+
+// 2
+// console.log(typeof(+'5'));
+
+// 3
+// console.log(typeof(parseInt("15px", 10)));
+
+
+// To boolean
+
+
+// false
+// 0, '', null, undefined, NaN;
+
+// 1
+// let switcher = null;
+
+// if (switcher) {
+//     console.log('Working...');
+// }
+
+// switcher = 1;
+
+// if (switcher) {
+//     console.log('Working...');
+// }
+
+// 2
+// console.log(typeof(Boolean('4')));
+
+// 3
+// console.log(typeof(!!"44444"));
+
+
+
