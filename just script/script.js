@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // CYCLES
 
 
@@ -369,35 +369,35 @@
 
 /// ДЕЙСТВИЯ С ЭЛЕМЕНТАМИ НА СТРАНИЦЕ
 
-const box = document.getElementById('box'),
-      btns = document.getElementsByTagName('button'),
-      circles = document.getElementsByClassName('circle'),
-      wrapper = document.querySelector('.wrapper'),
-      hearts = wrapper.querySelectorAll('.heart'),
-      oneHeart = wrapper.querySelector('.heart');
+// const box = document.getElementById('box'),
+//       btns = document.getElementsByTagName('button'),
+//       circles = document.getElementsByClassName('circle'),
+//       wrapper = document.querySelector('.wrapper'),
+//       hearts = wrapper.querySelectorAll('.heart'),
+//       oneHeart = wrapper.querySelector('.heart');
 
 // box.style.backgroundColor = 'blue';
 // box.style.width = '500px';
 
-box.style.cssText = 'background-color: blue; width: 500px';
+// box.style.cssText = 'background-color: blue; width: 500px';
 
-btns[1].style.borderRadius = '100%';
-circles[0].style.backgroundColor = 'red';
+// btns[1].style.borderRadius = '100%';
+// circles[0].style.backgroundColor = 'red';
 
 // for (let i = 0; i < hearts.length; i++) {
 //     hearts[i].style.backgroundColor = 'blue';
 // }
 
-hearts.forEach(item => {
-    item.style.backgroundColor = 'blue';
-});
+// hearts.forEach(item => {
+//     item.style.backgroundColor = 'blue';
+// });
 
-const div = document.createElement('div');
+// const div = document.createElement('div');
 // const text = document.createTextNode('Тут могла быть Ваша реклама');
 
-div.classList.add('black');
+// div.classList.add('black');
 
-wrapper.append(div);
+// wrapper.append(div);
 // wrapper.prepend(div);
 // wrapper.appendChild(div);
 
@@ -409,11 +409,145 @@ wrapper.append(div);
 // circles[0].remove();
 // wrapper.removeChild(hearts[1]);
 
-hearts[0].replaceWith(circles[0]);
+// hearts[0].replaceWith(circles[0]);
 // wrapper.replaceChild(circles[0], hearts[0]);
 
-div.innerHTML = "<h1>Hello World</h1>";
+// div.innerHTML = "<h1>Hello World</h1>";
 
 // div.textContent = "Hello";
 
-div.insertAdjacentHTML("afterend", '<h2>Hello</h2>');
+// div.insertAdjacentHTML("afterend", '<h2>Hello</h2>');
+
+
+/// ОБРАБОТЧИКИ СОБЫТИЙ
+
+
+// const btns = document.querySelectorAll('button'),
+//       overlay = document.querySelector('.overlay');
+
+// btn.onclick = function() {
+//     alert('Click');
+// };
+
+// btn.onclick = function() {
+//     alert('Second click');
+// };
+
+// btn.addEventListener('click', () => {
+//     alert('Click');
+// });
+
+// let i = 0;
+
+// const deleteElement =  (e) => {
+//     console.log(e.target);
+//     console.log(e.type);
+//     i++;
+//     if (i==1) {
+//         btn.removeEventListener('click', deleteElement);
+//     }
+// };
+
+// btn.addEventListener('click', deleteElement);
+// overlay.addEventListener('click', deleteElement);
+// btns.forEach(btn => {
+//     btn.addEventListener('click', deleteElement, {once: true});
+// });
+
+// const link = document.querySelector('a');
+
+// link.addEventListener('click', function(event) {
+//     event.preventDefault();
+
+//     console.log(event.target);
+// });
+
+
+/// Навигация по DOM
+
+
+// console.log(document.head);
+// console.log(document.documentElement);
+// console.log(document.body.childNodes);
+// console.log(document.body.firstChild);
+// console.log(document.body.firstElementChild);
+// console.log(document.body.lastChild);
+
+// console.log(document.querySelector('#current').parentNode);
+// console.log(document.querySelector('#current').parentElement);
+
+// console.log(document.querySelector('[data-current="3"]').previousElementSibling);
+
+// for (let node of document.body.childNodes) {
+//     if (node.nodeName == '#text') {
+//         continue;
+//     }
+
+//     console.log(node);
+// }
+
+
+//  СОБЫТИЯ НА МОБИЛЬНЫХ УСТРОЙСТВАХ
+
+
+//touchstart
+//touchmove
+//touchend
+//touchenter
+//touchleave
+//touchcancel
+
+// window.addEventListener('DOMContentLoaded', () => {
+//     const box = document.querySelector('.box');
+
+//     box.addEventListener('touchstart', (e) => {
+//         e.preventDefault();
+
+//         console.log('Start');
+//         console.log(e.touches);
+//     });
+
+//     box.addEventListener('touchmove', (e) => {
+//         e.preventDefault();
+
+//         console.log(e.targetTouches[0].pageX);
+//     });
+
+//     box.addEventListener('touchend', (e) => {
+//         e.preventDefault();
+
+//         console.log('End');
+//     });
+// });
+
+//touches
+//targetTouches
+//changedTouches
+
+
+//  Async, defer, динамические скрипты
+
+
+//defer - браузер должен загружать скрипт в фоновом режиме,
+// пока структура загружается и после скрипт выполнится
+
+// const p = document.querySelectorAll('p');
+// console.log(p);
+
+// async - загружается в фоновом, но запускается сразу, как только
+// загрузился
+
+// function loadScript(src) {
+//     const script = document.createElement('script');
+// script.src = 'src';
+// script.async = false;
+// document.body.append(script);
+// }
+
+// loadScript("js/test.js");
+// loadScript("script.js");
+
+
+// classList и делегирование собыий
+
+
